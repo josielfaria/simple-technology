@@ -1,0 +1,146 @@
+<div class="home-container">
+  <section class="hero">
+    <h1>📚 Documentações</h1>
+    <p>Acesse nossos guias e referências de desenvolvimento</p>
+  </section>
+
+  <!-- HERO -->
+  <section class="hero-menu-grid">
+    <a
+      href="#study-plan"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/study-plan.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">📚</div>
+      <h3>Plano de Estudo</h3>
+      <p>Conteúdo para um fullstack completo</p>
+    </a>
+  </section>
+
+  <!-- CONTEUDO -->
+  <section class="menu-grid">
+    <a
+      href="#programming-logic"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/1-programming-logic/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🧠</div>
+      <h3>Lógica de Programação</h3>
+      <p>Aprenda os fundamentos da programação e resolução de problemas</p>
+    </a>
+
+    <a
+      href="#web-fundamentals"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/2-web-fundamentals/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🌐</div>
+      <h3>Fundamentos da Web</h3>
+      <p>HTTP, APIs, JSON e como a internet funciona</p>
+    </a>
+
+    <a
+      href="#html-css"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/3-html-css/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🎨</div>
+      <h3>HTML + CSS</h3>
+      <p>Construa interfaces responsivas e bem estruturadas</p>
+    </a>
+
+    <a
+      href="#git"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/4-git/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🔀</div>
+      <h3>Controle de Versão (Git)</h3>
+      <p>Versionamento e colaboração com Git e GitHub</p>
+    </a>
+
+    <a
+      href="#javascript-web"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/5-javascript-web/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">⚡</div>
+      <h3>JavaScript para Web</h3>
+      <p>DOM, Eventos, Fetch API e Promises</p>
+    </a>
+
+    <a
+      href="#angular"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/6-angular/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🅰️</div>
+      <h3>Angular</h3>
+      <p>Framework moderno para construir SPAs</p>
+    </a>
+
+    <a
+      href="#nodejs"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/7-nodejs/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🟢</div>
+      <h3>Node.js + Express</h3>
+      <p>Desenvolvimento backend e APIs REST</p>
+    </a>
+
+    <a
+      href="#fullstack"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/8-fullstack/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🔗</div>
+      <h3>Integração Fullstack</h3>
+      <p>Conecte Angular com Node.js e autenticação JWT</p>
+    </a>
+
+    <a
+      href="#final-project"
+      class="menu-card"
+      onclick="
+        loadMarkdown('./documents/9-final-project/doc.md');
+        return false;
+      "
+    >
+      <div class="menu-icon">🚀</div>
+      <h3>Projeto Final</h3>
+      <p>Sistema financeiro completamente funcional</p>
+    </a>
+  </section>
+</div>
+
+<link rel="stylesheet" href="./styles/home.css" />
+
+<script src="./scripts/loadMarkdown.js"></script>

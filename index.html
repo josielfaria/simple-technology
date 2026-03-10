@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Study Git</title>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <img
+            src="./assets/logo.png"
+            alt="Study Git Logo"
+            class="navbar-logo"
+          />
+          <h1 class="navbar-title">Git</h1>
+        </div>
+        <ul class="navbar-menu">
+          <li>
+            <button class="nav-link" onclick="loadHTML('./home.html');">Home</button>
+          </li>
+          <li>
+            <button class="nav-link" onclick="loadMarkdown('./documents/study-plan.md');">Plano de Estudo</button>
+          </li>
+            <li class="nav-item-dropdown">
+            <button class="nav-link">Aulas <span class="chevron-down">▼</span></button>
+            <ul class="dropdown-menu">
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/1-programming-logic/doc.md');">1 - Lógica de Programação</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/2-web-fundamentals/doc.md');">2 - Fundamentos da Web</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/3-html-css/doc.md');">3 - HTML + CSS</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/4-git/doc.md');">4 - Git</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/5-javascript-web/doc.md');">5 - JavaScript</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/6-angular/doc.md');">6 - Angular</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/7-nodejs/doc.md');">7 - Node.js</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/8-fullstack/doc.md');">8 - Fullstack</button></li>
+              <li><button class="nav-link" onclick="loadMarkdown('./documents/9-final-project/doc.md');">9 - Projeto Final</button></li>
+            </ul>
+            </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="content"></div>
+
+    <div id="app"></div>
+
+    <footer class="footer">
+      <p>
+        Created by ~
+        <a href="https://josielfaria.com" target="_blank">Josiel Faria</a>
+      </p>
+    </footer>
+
+    <script src="./scripts/loadMarkdown.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,162 @@
+/* Repo Theme - Dark Mode */
+
+:root {
+  /* Primary Colors */
+  --color-white: #ffffff;
+  --color-primary-dark: #145167;
+  --color-primary-darker: #093a71;
+  --color-accent: #c2ed7e;
+  --color-secondary: #478196;
+  --color-gradient-1: linear-gradient(87.64deg, #478196 36.96%, #145167 92.15%);
+  --color-gradient-2: linear-gradient(271.03deg, #496d96 69%, #093a71 124.64%);
+  --color-gradient-3: linear-gradient(180deg, #2e4d70 0%, #4298b7 100%);
+
+  /* Semantic Colors */
+  --color-success: #10b981;
+  --color-warning: #f59e0b;
+  --color-error: #ef4444;
+  --color-info: #3b82f6;
+
+  /* Neutral Scale - Dark Mode */
+  --color-bg-primary: #1a1a2e;
+  --color-bg-secondary: #16213e;
+  --color-text-primary: #f0f0f0;
+  --color-text-secondary: #b0b0b0;
+  --color-border: #2d3748;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Typography */
+  --font-family:
+    -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 20px;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.7);
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  font-size: var(--font-size-base);
+  line-height: 1.6;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-md);
+}
+
+h1 {
+  font-size: 32px;
+  color: var(--color-accent);
+}
+h2 {
+  font-size: 24px;
+  color: var(--color-accent);
+}
+h3 {
+  font-size: 20px;
+  color: var(--color-primary-dark);
+}
+
+/* Buttons */
+.btn {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.btn-primary {
+  background-color: var(--color-primary-dark);
+  color: var(--color-white);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent);
+  color: var(--color-primary-darker);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-bg-primary);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--color-primary-darker);
+}
+
+/* Forms */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-sm);
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  color: var(--color-text-primary);
+  transition: border-color var(--transition-fast);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 0 0 3px rgba(125, 79, 163, 0.2);
+}
+
+/* Cards */
+.card {
+  background: var(--color-bg-secondary);
+  border-radius: 8px;
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition-normal);
+  border: 1px solid var(--color-border);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+}
